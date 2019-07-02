@@ -1,0 +1,213 @@
+html {
+	background-color: rgba(221, 221, 221, 0.5);
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	font-size: 100px;
+}
+h2 {
+	font-size: 100px;
+	text-align: center;
+	margin: 5px;
+}
+
+h3 {
+	font-size: 60px;
+	text-align: center;
+	margin: 5px;
+	background-color: #484848;
+	color: white;
+}
+
+input {
+	padding: 18px;
+	font-size: 60px;
+	display: inline;
+	width: 90%;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	border-style: solid;
+	border-color: lightgrey;
+	border-radius: 14px;
+	border-spacing: 10px;
+}
+input:first-child {
+	margin-top: 6px;
+}
+
+
+button {
+	background-color: #557A95;
+	color: white;
+	padding: 30px;
+	margin-top: 60px;
+	font-size: 60px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	border-color: #557A95;
+	border-width: 10px;
+	border-radius: 20px; 
+}
+
+.input-box {
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.top-banner {
+	background-color: #557A95;
+}
+
+.top-banner img {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+p {
+	font-size: 50px;
+	margin-top: 0;
+	color: black;
+	font-family: 'Lato', sans-serif;
+}
+
+hr {
+	border-width: 10px;
+	border-style: solid;
+	border-color: #5D5C61;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	width: 90%;
+}
+
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+
+.topnav, .anontopnav {
+	height: 10vh;
+	background-color: #557A95;
+}
+
+.topnav img, .anontopnav img {
+	height: 6vh;
+	display: inline;
+}
+
+.topnav a {
+	float: left;
+	display: inline;
+	margin-right: 4%;
+	margin-left: 4%;
+}
+
+#menuFork {
+	height: 100%;
+	max-width: 30%;
+	float: left;
+	display: inline;
+	margin: 0;
+}
+
+#menuFork img {
+	height: 100%;
+	max-width: 100%;
+}
+
+.anontopnav #menuFork {
+	height: 80%;
+	width: 60%;
+	max-width: 60%;
+}
+.anontopnav a {
+	float: left;
+	margin-right: 1%;
+	margin-left: 3%;
+}
+
+#loginButton {
+	font-size: 40px;
+	text-align: center;
+	float: right;
+	margin: 0;
+}
+
+.small-inputs label {
+	font-size: 60px;
+	display: inline;
+}
+.small-inputs input {
+	width: 70%;
+	display: inline;
+	background-color: white;
+}
+
+.card {
+	background-color: #7395AE;
+}
+
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.card {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 70px;
+  width: 90%;
+  height: 600px;
+}
+
+.card img {
+	height: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.checked {
+	color: grey;
+}
+
+.fa-star:before {
+	font-size: 100px;
+}
+
+.stars {
+	display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

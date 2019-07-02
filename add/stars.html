@@ -1,0 +1,20 @@
+<div>
+	<span id="star-1" class="fa fa-star" onclick="dothelog(1)"></span>
+	<span id="star-2" class="fa fa-star" onclick="dothelog(2)"></span>
+	<span id="star-3" class="fa fa-star" onclick="dothelog(3)"></span>
+	<span id="star-4" class="fa fa-star" onclick="dothelog(4)"></span>
+	<span id="star-5" class="fa fa-star" onclick="dothelog(5)"></span>
+</div>
+<input name="looks" value="1" style="display: none;">
+
+<script> 
+	function dothelog(number) {
+		for (var i = 1; i <= 5; i++) {
+			if (i <= number) {
+				$('#star-' + i).addClass("checked");
+			} else {
+				$('#star-' + i).removeClass("checked");
+			}
+		}
+	}
+</script>
