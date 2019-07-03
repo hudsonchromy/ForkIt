@@ -26,9 +26,7 @@
 			$userId = $_SESSION['userId'];
 			$userReviews = "SELECT * FROM Reviews WHERE userId='1'";
 			$results = mysqli_query($db, $userReviews);
-			echo mysqli_num_rows($results);
 			while($result = mysqli_fetch_assoc($results)):
-				echo "string";
 			?>
 				<div class="card">
 					 <?
@@ -64,12 +62,10 @@
 				    $keyPath = $row['path'];
 				  
 				  // Get file
-				    echo "bucket - " . $BUCKET_NAME . " key - " . $keyPath;
 				    $r = $s3->getObject(array(
 				      'Bucket' => $bucketName,
 				      'Key'    => $keyPath
 				    ));
-				    echo "here";
 				    // Display it in the browser
 				    echo "<img src='https://forkitreviews.s3.us-east-2.amazonaws.com/$keyPath'>";
 				}
