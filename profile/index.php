@@ -36,7 +36,9 @@
 					$restaurant = mysqli_fetch_assoc($restaurantQ)['restaurant'];
 					echo $restaurant; ?>
 					<?
-
+					$bucketName = getenv('bucketName');
+					$IAM_KEY = getenv('s3Key');
+					$IAM_SECRET = getenv('s3secret');
 					$reviewId = $result['id'];
 					$image = mysqli_query($db, "SELECT * FROM images WHERE reviewId='$reviewId'") or die("Error: Invalid request");
 					try {
