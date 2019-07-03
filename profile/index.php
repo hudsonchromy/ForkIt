@@ -66,7 +66,7 @@
 				  // Get file
 				    echo "bucket - " . $BUCKET_NAME . " key - " . $keyPath;
 				    $r = $s3->getObject(array(
-				      'Bucket' => $BUCKET_NAME,
+				      'Bucket' => $bucketName,
 				      'Key'    => $keyPath
 				    ));
 				    echo "here";
