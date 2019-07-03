@@ -34,6 +34,7 @@
 					$restaurantFind = "SELECT * FROM Forks WHERE id = '$restaurantId'";
 					$restaurantQ = mysqli_query($db, $restaurantFind);
 					$restaurant = mysqli_fetch_assoc($restaurantQ)['restaurant'];
+					echo $restaurantId;
 					echo $restaurant; ?>
 					<?
 					$bucketName = getenv('bucketName');
