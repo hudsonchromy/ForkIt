@@ -9,6 +9,7 @@
 	$USERNAME = getenv('username');
 	$PASSWORD = getenv('password');
 	$DBNAME = getenv('dbname');
+	echo "hsot: " . $HOST . " username " . $USERNAME . " password " . $PASSWORD . " dbname " . $DBNAME;
 	$db = mysqli_connect($HOST, $USERNAME, $PASSWORD, $DBNAME, 3306) or die('Error: Unable to Connect');
 
 	if (isset($_POST['submit'])) {
