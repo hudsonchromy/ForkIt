@@ -62,7 +62,8 @@
 	$HOST = getenv('host');
 	$USERNAME = getenv('username');
 	$PASSWORD = getenv('password');
-	$db = mysqli_connect($HOST, $USERNAME, $PASSWORD, 'ForkIt') or die('Error: Unable to Connect');
+	$DBNAME = getenv('dbname');
+	$db = mysqli_connect($HOST, $USERNAME, $PASSWORD, $DBNAME, 3306) or die('Error: Unable to Connect');
 
 	$qry = "INSERT INTO images (path, fork) VALUES ('$keyName', '$forkName')";
 	echo $qry;

@@ -24,7 +24,8 @@
   $HOST = getenv('host');
   $USERNAME = getenv('username');
   $PASSWORD = getenv('password');
-  $db = mysqli_connect($HOST, $USERNAME, $PASSWORD, 'ForkIt') or die('Error: Unable to Connect');
+  $DBNAME = getenv('dbname');
+  $db = mysqli_connect($HOST, $USERNAME, $PASSWORD, $DBNAME, 3306) or die('Error: Unable to Connect');
   $result = mysqli_query($db, "SELECT * FROM images WHERE forkId='$forkId'") or die("Error: Invalid request");
   try {
     $s3 = S3Client::factory(
