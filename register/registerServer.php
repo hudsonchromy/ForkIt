@@ -41,6 +41,7 @@
 		if(count($errors) == 0) {
 			$password = md5($password1);
 			$addQuery = "INSERT INTO Users (username, email, password) VALUES ('$username', '$email', '$password')";
+			header ("location: /login/");
 		}
 
 	}
