@@ -43,6 +43,7 @@
 					$IAM_SECRET = getenv('s3secret');
 					$reviewId = $result['id'];
 					$image = mysqli_query($db, "SELECT * FROM images WHERE reviewId='$reviewId'") or die("Error: Invalid request");
+					echo "here";
 					try {
 				    $s3 = S3Client::factory(
 				      array(
