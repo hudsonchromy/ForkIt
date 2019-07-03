@@ -13,6 +13,6 @@
 <link rel="stylesheet" href="https://cdn.auburn.edu/assets/css/bootstrap.min.css">
 </header>
 <body>
-	<img src="/images/forkBackground.jpg">
+	<img id="backgroundImg" src="/images/forkBackground.jpg">
 </body>
 </HTML>
