@@ -58,14 +58,13 @@
 				  } catch (Exception $e) {
 				    die("Error: " . $e->getMessage());
 				  }
-				  echo "here2";
 				  // Get path from db
 				  $keyPath = '';
 				  while($row = mysqli_fetch_array($image)) {
 				    $keyPath = $row['path'];
 				  
 				  // Get file
-				  echo "here1";
+				    echo "bucket - " . $BUCKET_NAME . " key - " . $keyPath;
 				    $r = $s3->getObject(array(
 				      'Bucket' => $BUCKET_NAME,
 				      'Key'    => $keyPath
