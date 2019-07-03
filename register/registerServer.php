@@ -27,9 +27,10 @@
 
 		$userCheck = "SELECT * FROM Users WHERE username='$usename' OR email='$email' LIMIT 1";
 		$result = mysqli_query($db, $userCheck);
-		$user = mysqli_fetch_assoc($result);
+		
 
-		if ($user) {
+		if ($result) {
+			$user = mysqli_fetch_assoc($result);
 			if ($user['username'] === $username) {
 		      array_push($errors, "Username already exists");
 		    }
