@@ -43,7 +43,7 @@
 					$IAM_SECRET = getenv('s3secret');
 					$reviewId = $result['id'];
 					$image = mysqli_query($db, "SELECT * FROM images WHERE reviewId='$reviewId'") or die("Error: Invalid request");
-					echo "here";
+
 					try {
 				    $s3 = S3Client::factory(
 				      array(
@@ -58,18 +58,19 @@
 				  } catch (Exception $e) {
 				    die("Error: " . $e->getMessage());
 				  }
-				  
+				  echo "here2";
 				  // Get path from db
 				  $keyPath = '';
 				  while($row = mysqli_fetch_array($image)) {
 				    $keyPath = $row['path'];
 				  
 				  // Get file
-				  
+				  echo "here1";
 				    $r = $s3->getObject(array(
 				      'Bucket' => $BUCKET_NAME,
 				      'Key'    => $keyPath
 				    ));
+				    echo "here";
 				    // Display it in the browser
 				    echo "<img src='https://forkitreviews.s3.us-east-2.amazonaws.com/$keyPath'>";
 				}
