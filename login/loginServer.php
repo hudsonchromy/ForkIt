@@ -29,7 +29,7 @@
 		if(count($errors) == 0) {
 			$_SESSION['username'] = $username;
 			$_SESSION['userId'] = $user['id'];
-			header("location: /register/");
+			header("location: /");
 		}
 
 	}
