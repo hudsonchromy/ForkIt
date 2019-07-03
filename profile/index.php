@@ -26,6 +26,7 @@
 			$userId = $_SESSION['userId'];
 			$userReviews = "SELECT * FROM Reviews WHERE userId='1'";
 			$results = mysqli_query($db, $userReviews);
+			echo mysqli_num_rows($results);
 			while($result = mysqli_fetch_assoc($results)):
 			?>
 				<div class="card">
