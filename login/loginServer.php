@@ -8,7 +8,7 @@
 	$PASSWORD = getenv('password');
 	$DBNAME = getenv('dbname');
 	$db = mysqli_connect($HOST, $USERNAME, $PASSWORD, $DBNAME, 3306) or die('Error: Unable to Connect');
-
+	echo "here";
 	if (isset($_POST['submit'])) {
 		echo "string";
 		$username = mysqli_real_escape_string($db, $_POST['username']);
@@ -27,8 +27,6 @@
 		}
 
 		if(count($errors) == 0) {
-			
-			
 			$_SESSION['username'] = $username;
 			$_SESSION['userId'] = $user['id'];
 			header('location: index.php');
