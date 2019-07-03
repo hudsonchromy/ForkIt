@@ -42,7 +42,7 @@
 			$password = md5($password1);
 			$addQuery = "INSERT INTO Users (username, email, password) VALUES ('$username', '$email', '$password')";
 			mysqli_query($db, $addQuery) or die("Couldnt add");
-			header("location: /");
+			header("location: /login/");
 		}
 
 	}
