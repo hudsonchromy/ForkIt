@@ -1,8 +1,9 @@
 <?php include('../login/loginServer.php')?>
 <HTML>
 	<head>
-		<title>ForkIt - Register</title>
+		<title>ForkIt - Login</title>
 		<link rel="stylesheet" type="text/css" href="../style.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<a href="/">
@@ -14,13 +15,10 @@
 		<form action="/login/" method="post">
 			<div class="input-box">
 				<input type="text" name="username" placeholder="Username"></input>
-				<input type="text" name="email" placeholder="Email"></input>
 				<input type="password" name="password" placeholder="Password"></input>
-				<input type="password" name="password2" placeholder="Confirm Password"></input>
 			</div>
-			<hr>
-			<button type="submit" name="submit">Register</button>
-			<p>Returning Reviewer? <a href="../login">Sign In</p>
+			<button type="submit" name="submit">Sign-In</button>
+			<p>New to Fork It? <a href="../register">Sign Up</p>
 		</form>
 	</body>
 </HTML>
