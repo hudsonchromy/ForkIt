@@ -19,7 +19,7 @@
 
 		$password = md5($password);
 		$userCheck = "SELECT * FROM Users WHERE username='$username' AND password='$password'";
-		$result = mysqli_query($db, $userCheck);
+		$result = mysqli_query($db, $userCheck) or die("cannot search");
 		$user = mysqli_fetch_assoc($result);
 		if (!$user) {
 			array_push($errors, "Username/Password is incorrect");
