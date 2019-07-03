@@ -3,7 +3,6 @@
 	$bucketName = getenv('bucketName');
 	$IAM_KEY = getenv('s3Key');
 	$IAM_SECRET = getenv('s3secret');
-	echo "bucket name - " . $bucketName . " key - " . $IAM_KEY . " secret - " . $IAM_SECRET;
 
 	$HOST = getenv('host');
 	$USERNAME = getenv('username');
