@@ -12,14 +12,12 @@
 			</div>
 		</a>
 		<?php include('../errors.php')?>
-		<form action="/login/" method="post">
+		<form action="/login/loginServer.php" method="post">
 			<div class="input-box">
 				<input type="text" name="username" placeholder="Username"></input>
 				<input type="password" name="password" placeholder="Password"></input>
 			</div>
-			<hr>
-			<button type="submit" name="submit">Register</button>
-			<p>Returning Reviewer? <a href="../login">Sign In</p>
+			<button type="submit" name="submit">Sign-In</button>
 		</form>
 		<p>New to Fork It? <a href="../register">Sign Up</p>
 	</body>
