@@ -1,4 +1,4 @@
-<?php include('../register/registerServer.php')?>
+<?php include('../login/loginServer.php')?>
 <HTML>
 	<head>
 		<title>ForkIt - Register</title>
