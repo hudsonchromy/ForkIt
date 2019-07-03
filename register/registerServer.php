@@ -1,6 +1,4 @@
 <?php
-	error_reporting(E_ALL);
-	ini_set('display_errors', 1);
 	$username = "";
 	$email = "";
 	$errors = array();
@@ -9,7 +7,6 @@
 	$USERNAME = getenv('username');
 	$PASSWORD = getenv('password');
 	$DBNAME = getenv('dbname');
-	echo "hsot: " . $HOST . " username " . $USERNAME . " password " . $PASSWORD . " dbname " . $DBNAME;
 	$db = mysqli_connect($HOST, $USERNAME, $PASSWORD, $DBNAME, 3306) or die('Error: Unable to Connect');
 
 	if (isset($_POST['submit'])) {
@@ -27,7 +24,6 @@
 		if ($password1 != $password2) { array_push($errors, "Passwords do not match"); };
 
 		$userCheck = "SELECT * FROM Users WHERE username='$usename' OR email='$email' LIMIT 1";
-		echo $userCheck;
 		$result = mysqli_query($db, $userCheck) or die("couldnt even do this");
 		
 
@@ -45,8 +41,6 @@
 		if(count($errors) == 0) {
 			$password = md5($password1);
 			$addQuery = "INSERT INTO Users (username, email, password) VALUES ('$username', '$email', '$password')";
-			echo $addQuery;
-			echo mysqli_query($db, $addQuery) or die("Couldnt add");
 		}
 
 	}
