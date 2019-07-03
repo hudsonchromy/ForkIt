@@ -11,7 +11,7 @@
 			</div>
 		</a>
 		<?php include('../errors.php')?>
-		<form action="/login/" method="post">
+		<form action="/register/" method="post">
 			<div class="input-box">
 				<input type="text" name="username" placeholder="Username"></input>
 				<input type="text" name="email" placeholder="Email"></input>
