@@ -15,7 +15,7 @@
 			<div class="input-box">
 				<input type="text" name="username" placeholder="Username"></input>
 				<input type="text" name="email" placeholder="Email"></input>
-				<input type="password" name="password1" placeholder="Password"></input>
+				<input type="password" name="password" placeholder="Password"></input>
 				<input type="password" name="password2" placeholder="Confirm Password"></input>
 			</div>
 			<hr>
