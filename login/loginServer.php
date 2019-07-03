@@ -1,4 +1,5 @@
 <?php
+	session_start();
 	$username = "";
 	$email = "";
 	$errors = array();
@@ -28,7 +29,7 @@
 		if(count($errors) == 0) {
 			$_SESSION['username'] = $username;
 			$_SESSION['userId'] = $user['id'];
-			header('location: index.php');
+			header("location: /register/");
 		}
 
 	}
