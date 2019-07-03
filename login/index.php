@@ -18,7 +18,7 @@
 				<input type="password" name="password" placeholder="Password"></input>
 			</div>
 			<button type="submit" name="submit">Sign-In</button>
+			<p>New to Fork It? <a href="../register">Sign Up</p>
 		</form>
-		<p>New to Fork It? <a href="../register">Sign Up</p>
 	</body>
 </HTML>
