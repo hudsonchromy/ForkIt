@@ -6,7 +6,6 @@
 	$HOST = getenv('host');
 	$USERNAME = getenv('username');
 	$PASSWORD = getenv('password');
-	echo $PASSWORD;
 	$db = mysqli_connect($HOST, $USERNAME, $PASSWORD, 'ForkIt') or die('Error: Unable to Connect');
 
 	if (isset($_POST['submit'])) {
