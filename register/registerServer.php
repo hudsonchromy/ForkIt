@@ -26,7 +26,7 @@
 		if ($password1 != $password2) { array_push($errors, "Passwords do not match"); };
 
 		$userCheck = "SELECT * FROM Users WHERE username='$usename' OR email='$email' LIMIT 1";
-		$result = mysqli_query($db, $userCheck);
+		$result = mysqli_query($db, $userCheck) or die("couldnt even do this");
 		
 
 		if ($result) {
