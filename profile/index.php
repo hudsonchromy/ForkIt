@@ -28,7 +28,7 @@
 			$results = mysqli_query($db, $userReviews);
 			while($result = mysqli_fetch_assoc($results)):
 			?>
-				<div class="card">
+				<a href="https://google.com"><div class="card">
 					 <?
 					$restaurantId = $result['restaurantId'];
 					$restaurantFind = "SELECT * FROM Forks WHERE id = '$restaurantId'";
@@ -75,7 +75,7 @@
 					<?
 					$stars = $result['rating'];
 					include('../stars.php')?>
-				</div>
+				</div></a>
 			<?endwhile;?>
 
 
